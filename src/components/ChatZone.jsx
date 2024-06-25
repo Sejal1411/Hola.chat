@@ -1,9 +1,12 @@
 import { Grid } from '@mui/material';
+import OtherMsg from './OtherMsg';
+import UserMsg from './UserMsg';
 
 const ChatZone = () => {
   return (
-    <Grid item className='chat-zone'>
-      ChatZone
+    <Grid container className='chat-zone'>
+      <OtherMsg />
+      <UserMsg />
     </Grid>
   );
 };

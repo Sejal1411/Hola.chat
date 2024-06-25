@@ -31,13 +31,18 @@ aside {
 }
 
 .avatar {
-  height: 25px !important;
-  width: 25px !important;
+  height: 30px !important;
+  width: 30px !important;
 }
 
 .avatar.big {
   height: 40px !important;
   width: 40px !important;
+}
+
+.avatar-medium {
+  height: 30px !important;
+  width: 30px !important;
 }
 
 .side-header,
@@ -58,7 +63,12 @@ aside {
   justify-items: center;
 }
 
-.chat-header,
+.chat-header {
+  background-color: white;
+  padding: 10px 10px;
+  border-radius: 20px;
+  width: 100%;
+}
 .chat-send,
 .chat-zone {
   background-color: white;
@@ -108,4 +118,46 @@ aside {
   border: none !important;
   border: 0px !important;
   outline: 0px !important;
+}
+
+.title {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0.54);
+}
+
+/* .msg {
+  
+} */
+
+.time-stamp {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 0.75rem;
+  color: rgba(0, 0, 0, 0.54);
+  padding-left: 100px;
+}
+.othermsg-container {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  justify-content: start;
+  align-items: self-start;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.others-box {
+  background-color: aquamarine;
+  border-radius: 20px;
+  width: max-content;
+  box-sizing: border-box;
+  padding: 7px;
+  margin: 5px;
+}
+
+
+
+.usermsg-container {
+  display: flex;
+  justify-content: flex-end;
+  
 }

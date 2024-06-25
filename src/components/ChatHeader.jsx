@@ -1,12 +1,12 @@
 import { Logout } from '@mui/icons-material';
-import { Grid, IconButton } from '@mui/material';
+import { Grid, IconButton, Avatar } from '@mui/material';
 
-const ChatHeader = () => {
+const ChatHeader = ({ props }) => {
   return (
-    <Grid item className='chat-header'>
-      <IconButton>
-        <Logout />
-      </IconButton>
+    <Grid container className='chat-header'>
+      <Grid item>
+        <Avatar className='avatar-medium' />
+      </Grid>
     </Grid>
   );
 };

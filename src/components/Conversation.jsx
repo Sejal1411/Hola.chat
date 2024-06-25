@@ -1,6 +1,6 @@
 import { Grid, Avatar } from '@mui/material';
 
-const Conversation = ({ props, test }) => {
+const Conversation = ({ props }) => {
   return (
     <Grid container className='conversation'>
       <Grid item>

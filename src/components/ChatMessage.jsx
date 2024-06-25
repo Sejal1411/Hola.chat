@@ -7,6 +7,7 @@ const ChatMessage = () => {
       <TextField
         className='chat-send'
         variant='filled'
+        placeholder='Type a message'
         fullWidth
         hiddenLabel
         InputProps={{
