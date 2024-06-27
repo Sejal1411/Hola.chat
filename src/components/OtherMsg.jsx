@@ -11,13 +11,17 @@ const OtherMsg = (props1) =>{
 
   return (
     <Grid container className='othermsg-container'>
-     <Grid item className='others-box'>
-      <Avatar className='avatar big' />
+    <Grid item className='others-box'>
+      <Avatar className='avatar-big' />
+
+    <Grid item className='msg-container'>
         <p className='title'>{props1.name}</p>
         <p>{props1.message}</p>
         <p className='time-stamp'>{props1.time}</p>
-      </Grid>
-      </Grid>
+    </Grid>
+
+    </Grid>
+    </Grid>
   )
 }
 

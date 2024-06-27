@@ -7,6 +7,12 @@ const ChatZone = () => {
     <Grid container className='chat-zone'>
       <OtherMsg />
       <UserMsg />
+      <OtherMsg />
+      <UserMsg />
+      <OtherMsg />
+      <UserMsg />
+      <OtherMsg />
+      <UserMsg />
     </Grid>
   );
 };

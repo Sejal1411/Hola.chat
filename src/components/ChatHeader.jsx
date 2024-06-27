@@ -1,4 +1,3 @@
-import { Logout } from '@mui/icons-material';
 import { Grid, IconButton, Avatar } from '@mui/material';
 
 const ChatHeader = ({ props }) => {
