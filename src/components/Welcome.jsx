@@ -1,8 +1,9 @@
+import logo from "/public/hello.png";
 
 const Welcome = () => {
   return (
     <div className="welcome-container">
-        <img src="hello.png" alt="Logo" className="welcome-logo"/>
+        <img src={logo} alt="Logo" className="welcome-logo"/>
     </div>
   
   )

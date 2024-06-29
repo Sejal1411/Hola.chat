@@ -4,6 +4,7 @@ import Main from './components/Main';
 import Welcome from './components/Welcome';
 import ChatArea from './components/ChatArea';
 import CreateGroups from './components/CreateGroups';
+import Groups from './components/Groups';
 
 
 const App = () => {
@@ -14,8 +15,9 @@ const App = () => {
     <Route path="/" element={<Login />}/>
     <Route path="app" element={<Main />}>
        <Route path="welcome" element={<Welcome />}></Route>
-       <Route path="chat" element={<ChatArea />}></Route>
+       <Route path="chats" element={<ChatArea />}></Route>
        <Route path="create-groups" element={<CreateGroups />}></Route>
+       <Route path="groups" element={<Groups />}></Route>
     </Route>
   </Routes>
   // <Login />

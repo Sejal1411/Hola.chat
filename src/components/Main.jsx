@@ -3,18 +3,18 @@ import SideBar from './SideBar';
 import Welcome from './Welcome';
 import CreateGroups from './CreateGroups';
 import { Outlet } from 'react-router-dom';
-import Users from './Users';
+import Groups from './Groups';
 
 
 const Main = () => {
   return (
     <main>
       <SideBar />
-      {/* <Outlet /> */}
+      <Outlet />
       {/* <CreateGroups /> */}
       {/* <Welcome /> */}
       {/* <ChatArea /> */}
-      <Users />
+      {/* <Groups /> */}
     </main>
   );
 };

@@ -5,24 +5,46 @@ import {
   GroupAdd,
   AddCircle,
 } from '@mui/icons-material';
+import { useNavigate } from 'react-router-dom';
+import LightModeIcon from '@mui/icons-material/LightMode';
+import { useState } from 'react';
 
 const SideHeader = () => {
+ const navigate =  useNavigate();
+ const [lightTheme,setLightTheme] = useState(true);
+
   return (
-    <Grid container className='side-header'>
+    <Grid container className={'side-header' + (lightTheme ?"" : " dark")}>
       <Avatar className='avatar' />
       <ButtonGroup>
-        <IconButton>
-          <PersonAddAlt1 />
+
+        <IconButton onClick={() => {
+          navigate("users");
+        }}>
+          <PersonAddAlt1 className={(lightTheme ?"" : " dark")}/>
         </IconButton>
-        <IconButton>
-          <GroupAdd />
+
+        <IconButton onClick={() => {
+          navigate("groups")
+        }}>
+          <GroupAdd className={(lightTheme ?"" : " dark")}/>
         </IconButton>
-        <IconButton>
-          <AddCircle />
+
+        <IconButton onClick={() => {
+          navigate("create-groups")
+        }}>
+          <AddCircle className={(lightTheme ?"" : " dark")}/>
         </IconButton>
-        <IconButton>
-          <DarkMode />
+
+        <IconButton onClick={()=> {
+          setLightTheme((prevValue) => {
+            return !prevValue;
+          });
+        }}>
+          {lightTheme && <DarkMode />}
+          {!lightTheme && <LightModeIcon />}
         </IconButton>
+
       </ButtonGroup>
     </Grid>
   );
