@@ -8,10 +8,11 @@ import {
 import { useNavigate } from 'react-router-dom';
 import LightModeIcon from '@mui/icons-material/LightMode';
 import { useState } from 'react';
+import { useSelector } from 'react-redux';
 
 const SideHeader = () => {
  const navigate =  useNavigate();
- const [lightTheme,setLightTheme] = useState(true);
+ const lightTheme = useSelector((state) => state.themeKey);
 
   return (
     <Grid container className={'side-header' + (lightTheme ?"" : " dark")}>
