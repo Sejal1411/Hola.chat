@@ -1,6 +1,6 @@
 import { Avatar, IconButton } from "@mui/material"
 import SearchIcon from "@mui/icons-material/Search";
-import logo from "/public/chat1.png";
+import logo from "/chat1.png";
 
 const Groups = () => {
   return (

@@ -4,12 +4,11 @@ export const themeSlice = createSlice({
     name: 'themeSlice',
     initialState : true,
     reducers : {
-        toggleTheme: (state)  => 
-        {
-            state = !state;
-        },
+        toggleTheme: (state)  => {
+          return (state = !state);
     },
+  },
 });
 
-export const {toggleTheme} = themeSlice.actions;
+export const { toggleTheme } = themeSlice.actions;
 export default themeSlice.reducer;
