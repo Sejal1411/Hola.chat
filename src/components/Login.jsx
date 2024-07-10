@@ -3,10 +3,10 @@ import { Button, TextField } from '@mui/material';
 const Login = () => {
   return (
     <div className="login-container"> 
-       <div className="image-con">
+      <div className="image-con">
         <img src="chat2.png" alt="Logo" />
+      </div>
 
-       </div>
       <div className="login-box">
       <p>Login to your Account!</p>
       <TextField 
@@ -20,6 +20,7 @@ const Login = () => {
         type="password"
         autoComplete="current-password"
      />
+     
      <Button variant="contained">LOG IN</Button>
       </div>
    </div>
